@@ -1,0 +1,64 @@
+body {
+    height: 100vh;
+    animation: colorChange 10s infinite;
+    background: linear-gradient(45deg, #f3e5ab, #e7d1a5);
+}
+
+@keyframes colorChange {
+  0% {
+    background: linear-gradient(45deg, #f3e5ab, #e7d1a5);
+  }
+  50% {
+    background: linear-gradient(45deg, #e7d1a5, #f3e5ab);
+  }
+  100% {
+    background: linear-gradient(45deg, #f3e5ab, #e7d1a5);
+  }
+}
+
+/* Apply focus and hover border with linear gradient */
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border: 2px solid transparent;
+  border-image: linear-gradient(135deg, #FFA500, #FF8C00, #FF7F50, #FF6347);
+  border-image-slice: 1;
+  transition: border 0.2s;
+}
+
+
+.glassEffect {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: none;
+  font-weight: bold;
+}
+
+.line {
+  stroke: #FFA500;
+}
+
+.divCont {
+  background: linear-gradient(135deg, #FFA500, #FF8C00, #FF7F50, #FF6347);
+  background-size: 400% 400%;
+  animation: changeColor 10s infinite;
+  border-radius: 15px;
+}
+
+.bg-orange {
+  background: linear-gradient(135deg, #FFA500, #FF8C00, #FF7F50, #FF6347);
+}
+
+@keyframes changeColor {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+
+
